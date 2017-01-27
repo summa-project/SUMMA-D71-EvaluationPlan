@@ -1,0 +1,59 @@
+%\section[fragile]{%
+%\replace{User Evaluation and the Description of Action}%
+%{Aspects of Evaluation}%
+%}
+
+%\section{Aspects of Evaluation}
+
+%\cut{%
+%According to the Description of Action, Work package 7
+%will carry out overall user evaluation and validation of the two demonstration scenarios envisaged for the \SUMMA platform in real-world environments.
+%Evaluation will be approached from different angles. 
+%} % end of cut
+
+%\UG{I think following the breakdown into tasks from the DoA doesn't quite work here.}
+
+%\ins{\subsection[fragile]{Different Types of Users}}
+
+%\replace{%
+%Task 7.1 focuses on setting up an evaluation plan, i.e., the current deliverable. Elaboration of a detailed evaluation plan at the early stages of the project, defining the testing and validation methodology of the platform based on the technical and functional requirements defined in D1.1. Different test user groups are addressed: Innovation managers, data specialists, monitors, analysts, journalists, editors, and other media professionals involved in the media monitoring process will be attracted as target test user groups for evaluating the prototypes. These groups were described as personae in D1.1 (Use Case Description and Requirements). D7.1 (Evaluation Plan) will define the testing and validation methodology of the platform, and it will contain a plan for carrying out these tests.
+%}{% WITH
+%Deliverable D1.1 (\textit{Use Case Description and Requirements}) identifies different types of users (\textit{personae}) that could benefit from the \SUMMA Platform: innovation managers, data specialists, media monitors, analysts, journalists, editors, and other media professionals that are involved in the media monitoring process. As each \textit{persona} has different needs and requirements, user-level evaluations have to take into account the specific circumstances for each of these user types.%
+%}% end of replacement
+%\UG{Consider integrating this subsection into the subsection on Component Tests, Lab Trials and Field Trials}
+
+%\ins{\subsection{Component-Level Testing}}
+
+%\cut{%
+%Task 7.2 revolves around evaluation of components and platform. The different components and technologies, including ASR, machine translation, monitoring and collecting of news feeds, automated content selection, analysis and comparison of the selected content, summarisation, semantic analysis, annotation and visualisation of the produced output, will be evaluated throughout the project. As separate components, features or functionalities become available, they will be tested as soon as they become available.
+%} % END OF CUT
+
+%\replace{%
+%Rigorous evaluation of components and systems is central to \SUMMA.
+%At the technology component level, we shall evaluate using standardised \SUMMA data sets and quality/scalability performance metrics. In terms of component testing, for example the MT component, several well-established automatic measures of MT quality that are regularly used for MT benchmarking, are considered, such as Bleu and Translation Edit Rate. A regime of regular regression tests will be established to ensure that we are progressing toward our goals: (1) maintaining translation quality while improving speed; and (2) improving translation quality by considering more and more data. 
+%}{% WITH
+%Individual processing components will be tested regularly with common \SUMMA data sets and standard evaluation metrics for the component in question, e.g. word error rate for speech recognition and BLEU (among others) for measuring MT quality. Section~\ref{sec-verification} below provides more details on component tests.
+%} % END OF REPLACEMENT
+
+%\ins{\subsection{Scalability}}
+%The overall \SUMMA platform will be evaluated in terms of scalability. The main performance metric will be in the provision of multiple streams of media data for scalability evaluation. We aim to use the \SUMMA platform to process 250–400 live streams, a level of monitoring which would currently require 60–100 people. \SUMMA platform scalability tests will be prior to project months M24 and M36 to verify key performance indicators.
+
+%\ins{\subsection{Component Tests, Lab Trials, and Field Trials}}
+%Tasks T7.3 and T7.4 \ins{are concerned with the} validat\replace{e}{ion of the demonstrators (D6.4) for the} the External (BBC) and Internal (DW) Monitoring Use Cases\cut{, i.e., the demonstrators}.
+%Use case prototypes on the External (BBC) and Internal (DW) Monitoring Use Cases shall be evaluated in close-to-operational conditions, used by (monitoring) journalists, analysts and editors.
+%\UG{A bit of confusion here: the SUMMA wiki mentions only the external demonstrator as a deliverable at M18; the internal demonstrator is not due until the end of the project. So between the DoA and this document, we'd be evaluating something that doesn't officially exist yet.}
+
+%\replace{In fact, user}{Use case} partners will \replace{do}{perform} extensive evaluation at all phases of the project. This involves testing of all components (available to the user partners), the integrated platform, and the two demonstrators. Feedback will be provided on all testing. Specific user validation workshops will be organised for final prototype validation. There will be close collaboration among user partners as to user evaluation in order to provide consistent user feedback to the technical partners. 
+
+%Extensibility and flexibility will be tested, for instance through the use of the \SUMMA platform in News Hacks and Innovation Intensives. 
+
+%Thus, the DoA mentions different types of evaluation that will be used:
+
+%\begin{itemize}
+%\item \textbf{\replace{Component-based evaluation}{Evaluation at the component level}}, \cut{referring to the activities} as described above, also referred to as ``unit testing'', following the V-Model for evaluation \replace{used in this deliverable}{(see Sec.~\ref{sec-vmodel} below)}.
+
+%\item \textbf{Lab trials:} These are trials with small numbers of users with limited features and content sets potentially on site at DW
+%and BBC Monitoring. They are also referred to as focus group testing. The users for such trials will not be on duty at the time, and although the content may be as live and they may be acting through their full workflow, this will not be in the actual operational team. These trials are common to the most in-depth and intensive testing phases of the agile prototyping cycles. These tests involve both platform testing and application/use case testing. 
+
+%\item \textbf{Field trials:} These trials are a step beyond the main prototyping cycle of development and testing. With the field trials, integrated and tested user interfaces will be tested and trialed with real users in the actual working environment for limited periods of time. Field trials may be limited in functionality, languages, research subjects/areas or content types. Field trials will be an opportunity to assess the impact of the new tools on the larger workflow and operation. These evaluation sessions will be started as early as possible within the project. Depending on the user scenario and language coverage, such experimental field trials will include up to 15 participants, including journalists, editors, monitors, analysts, and new media staff – the exact number of journalists evolves with the prototyping process and will be defined together with the operational management. All available and regularly covered media streams and content sources, processable by the \SUMMA system will potentially be included.
+%\end{itemize}

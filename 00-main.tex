@@ -1,0 +1,75 @@
+\documentclass[12pt]{article} 
+
+
+\input{include/includes}
+\input{include/macros}
+
+
+\newcommand{\Workpackage}{WP7}
+\newcommand{\DeliverableNumber}{D7.1}
+\newcommand{\DeliverableName}{Evaluation Plan}
+\newcommand{\DeliverableNature}{Report}
+\newcommand{\DeliverableDueDate}{31/01/2017}
+\newcommand{\DeliverableSubmissionDate}{31/01/2017}
+\newcommand{\MainAuthor}{Peggy van der Kreeft (DW)}
+\newcommand{\CoAuthors}{Susanne Weber (BBC), Alexandra Birch (UEDIN)}
+\newcommand{\Reviewers}{Ulrich Germann (UEDIN), Chris Hernon (BBC)}
+\newcommand{\Keywords}{evaluation, data, social media, monitoring}
+\newcommand{\SUMMA}{{\textit{SUMMA}}\xspace}
+
+\newtoggle{ShowReviewEdits}
+\newtoggle{ShowReviewerComments}
+
+% use one of the two below 
+%\toggletrue{ShowReviewEdits}
+\togglefalse{ShowReviewEdits}
+
+% use one of the two below 
+%\toggletrue{ShowReviewerComments}
+\togglefalse{ShowReviewerComments}
+
+\iftoggle{ShowReviewerComments}{ % show reviewer comments
+\newcommand{\UG}[1]{{\color{blue}[Comment by UG: {#1}]}} 
+\newcommand{\SW}[1]{{\color{susannecommentcolor}[Comment by SW: {#1}]}} 
+}{%
+\newcommand{\UG}[1]{\ignorespacesafterend}
+\newcommand{\SW}[1]{\ignorespacesafterend}
+}
+
+\iftoggle{ShowReviewEdits}{ % show review edits
+    \newcommand{\cut}[1]{{\color{gray}\sout{#1}}}
+    \newcommand{\ins}[1]{{\color{red} #1}}%
+}{%
+    \newcommand{\cut}[1]{\ignorespacesafterend}
+    \newcommand{\ins}[1]{#1}
+}
+
+\newcommand{\replace}[2]{\cut{#1}\ins{#2}}
+
+\begin{document}
+\input{include/firstpage}
+\input{01-abstract} % moved here from after list of figures [UG]
+\clearpage
+\tableofcontents
+\newpage
+\listoffigures
+\clearpage
+%\input{abstract}\clearpage % => directly after cover page [UG]
+\input{02-usecases}\clearpage
+\input{03-usereval}\clearpage
+\input{04-evalmethod}\clearpage
+\input{05-schedule}\clearpage
+\input{06-verification}\clearpage
+\input{07-validation}\clearpage
+\input{08-feedback}\clearpage
+
+%\clearpage
+\input{09-conclusion}
+\clearpage
+
+\bibliographystyle{apalike}
+\bibliography{summa}
+
+\input{include/lastpage}
+\end{document}
+
